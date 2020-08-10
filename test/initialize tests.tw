@@ -1,0 +1,11 @@
+:: initialize tests
+
+// load macros
+importScripts("macros/assert-equals.js")
+	.then(function () {
+		<<goto "run tests">>
+	})
+	.catch(function (err) {
+		<<print Couldn't find no tests :(>>
+		console.log(err);
+	});
