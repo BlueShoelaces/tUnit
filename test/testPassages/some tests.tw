@@ -2,15 +2,15 @@
 
 <<nobr>>
 
-<<test "2 = 3" $tests>>
+<<test "2 should equal 3">>
     <<assert-equals 2 3 $output>>
 <</test>>
 
-<<test "4 = 4" $tests>>
+<<test "4 should equal 4">>
     <<assert-equals 4 4 $output>>
 <</test>>
 
-<<test "'hello' = 'hello'" $tests>>
+<<test "'hello' should equal 'hello'">>
     <<assert-equals "hello" "hello" $output>>
 <</test>>
 
