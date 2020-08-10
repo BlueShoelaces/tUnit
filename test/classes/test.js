@@ -1,16 +1,18 @@
-window.Test = function (name, testPassage) {
+window.Test = function (name, payload) {
 	this.name = name;
-	this.testPassage = testPassage;
+	this.payload = payload;
 };
 
 Test.prototype.run = function () {
-	return Dialog.wiki(Story.get(this.testPassage).processText());
-}
+	for (var i = 0; i < this.payload.length; i++) {
+		return Dialog.wiki(this.payload[i].contents);
+	};
+};
 
 Test.prototype.clone = function () {
 	return new Test(
 		this.name,
-		this.testPassage
+		this.payload
 	);
 };
 
@@ -18,6 +20,6 @@ Test.prototype.toJSON = function () {
 	return JSON.reviveWrapper(String.format(
 		'new Test({0},{1},{2},{3})',
 		JSON.stringify(this.name),
-		JSON.stringify(this.testPassage)
+		JSON.stringify(this.payload)
 	));
 };

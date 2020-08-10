@@ -4,6 +4,9 @@
 <<set $output to []>>
 <<set $tests to []>>
 
+// load classes
+importScripts("classes/test.js")
+
 // load macros
 importScripts("macros/assert-equals.js")
 	.then(function () {
@@ -13,6 +16,3 @@ importScripts("macros/assert-equals.js")
 		<<print Couldn't find no tests :(>>
 		console.log(err);
 	});
-
-// load classes
-importScripts("classes/test.js")

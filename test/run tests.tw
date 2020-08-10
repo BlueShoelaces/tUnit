@@ -1,13 +1,9 @@
 :: run tests
 
-<<nobr>>
-<<run $tests.push(new Test("Assert that 2 equals 3", "first test"))>>
-<<run $tests.push(new Test("Assert that 4 equals 4", "second test"))>>
-<<run $tests.push(new Test("Assert that 'hello' equals 'hello'", "third test"))>>
-<<run $tests.push(new Test("Assert that '1' equals 3", "fourth test"))>>
-<</nobr>><h1>Test results</h1>
+<i>Running tests...</i><<display "some tests">>
+<h1>Test results</h1>
+
 <<for _i, _test range $tests>>
     _test.name
     <<run _test.run()>>$output[_i]
-
 <</for>>
