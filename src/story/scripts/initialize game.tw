@@ -1,0 +1,5 @@
+:: initialize game [hide-footer startup]
+
+// initialize game variables here
+
+<<goto "splash screen">>

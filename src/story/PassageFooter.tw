@@ -1,0 +1,11 @@
+:: PassageFooter
+<<nobr>>
+<<if not tags().includes("hide-footer")>>
+    <hr>
+<<if tags().includes("modal")>>
+    <<return Done>>
+<</if>>
+    <br/>
+    [[Exit game|initialize game]]
+<</if>>
+<</nobr>>

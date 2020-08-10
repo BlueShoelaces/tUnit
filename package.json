@@ -1,0 +1,20 @@
+{
+  "name": "alya-game",
+  "version": "1.0.0",
+  "description": "```\r \"C:\\Program Files\\tweego-2.1.1-windows-x64\\tweego.exe\"\r ```\r Add this to PATH variable to be able to use `tweego` cli.",
+  "main": "bin\\alya.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tweego -o bin\\alya.html src --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueShoelaces/alya-twine"
+  },
+  "author": "jingle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlueShoelaces/alya-twine/issues"
+  },
+  "homepage": "https://github.com/BlueShoelaces/alya-twine#readme"
+}
