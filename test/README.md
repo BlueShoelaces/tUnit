@@ -35,11 +35,19 @@ goal: run a single command like `npm test` and have a suite of tests run
 goal: have a minimalist, formulaic unit test template
 
 The `run tests` passage can call a custom macro/function, which takes a list of `Test` custom objects and runs them.
-- `Test` object will need a `run` method
+- `Test` object will need a `run` method which calls a function parameter
+    - ```
+      class Test {
+          public Result run(Function test) {
+              return test();
+          }
+      }
+      ```
 - Custom assertion macros (e.g. `assertEquals`)
     - failures save the "expected" and "actual" values somewhere where `run tests` will be able to access them for display
 - Custom macro to define a `Test` and add it to the `test suite`
     - so that Twila isn't spinning up new class instances left and right
+    - idea: `test` macro could return a `Result` object containing `expected` and `actual` values
 
 Example:
 ```
