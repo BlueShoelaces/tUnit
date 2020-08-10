@@ -1,21 +1,13 @@
 :: run tests
 
-<<set $output to []>>
+<<nobr>>
+<<run $tests.push(new Test("Assert that 2 equals 3", "first test"))>>
+<<run $tests.push(new Test("Assert that 4 equals 4", "second test"))>>
+<<run $tests.push(new Test("Assert that 'hello' equals 'hello'", "third test"))>>
+<<run $tests.push(new Test("Assert that '1' equals 3", "fourth test"))>>
+<</nobr>><h1>Test results</h1>
+<<for _i, _test range $tests>>
+    _test.name
+    <<run _test.run()>>$output[_i]
 
-Assert that 2 and 3 are equal:
-<<assert-equals 2 3 $output>>$output[0]
-
-Assert that 4 and 4 are equal:
-<<assert-equals 4 4 $output>>$output[1]
-
-Assert that "dog" and "cat" are equal:
-<<assert-equals "dog" "cat" $output>>$output[2]
-
-Assert that "hello" and "hello" are equal:
-<<assert-equals "hello" "hello" $output>>$output[3]
-
-Assert that "1" and 3 are equal:
-<<assert-equals "1" 3 $output>>$output[4]
-
-Assert that "1" and "3" are equal:
-<<assert-equals "1" "3" $output>>$output[5]
+<</for>>
