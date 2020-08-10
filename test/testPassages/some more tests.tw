@@ -1,0 +1,13 @@
+:: some more tests [test]
+
+<<nobr>>
+
+<<test "'1' = 3" $tests>>
+    <<assert-equals "1" 3 $output>>
+<</test>>
+
+<<test "14 = 42" $tests>>
+    <<assert-equals 14 42 $output>>
+<</test>>
+
+<</nobr>>

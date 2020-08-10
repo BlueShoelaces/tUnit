@@ -1,7 +1,13 @@
 :: run tests
 
-<i>Running tests...</i><<display "some tests">>
-<h1>Test results</h1>
+<h1>Test results</h1><<nobr>>
+<i>Running tests...</i>
+
+<<set $testPassages to Story.lookup("tags", "test")>>
+<<for _testPassage range $testPassages>>
+    <<display _testPassage.title>>
+<</for>>
+<</nobr>>
 
 <<for _i, _test range $tests>>
     _test.name
