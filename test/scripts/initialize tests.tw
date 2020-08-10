@@ -1,0 +1,5 @@
+:: initialize tests
+
+// initialize test variables
+
+<<goto "run tests">>

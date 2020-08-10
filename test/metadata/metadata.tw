@@ -1,0 +1,12 @@
+:: StoryTitle
+Tests
+
+
+:: StoryData
+{
+	"ifid": "B0195454-F2C0-4DAC-B906-3946BA97AA7B",
+	"format": "SugarCube",
+	"format-version": "2.31.1",
+	"start": "initialize tests",
+	"zoom": 1
+}
