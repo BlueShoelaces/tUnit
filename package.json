@@ -4,17 +4,17 @@
   "description": "```\r \"C:\\Program Files\\tweego-2.1.1-windows-x64\\tweego.exe\"\r ```\r Add this to PATH variable to be able to use `tweego` cli.",
   "main": "bin\\alya.html",
   "scripts": {
-    "test": "tweego -o bin\\test.html test --watch",
+    "test": "tweego -o test-output\\test.html test --watch",
     "compile": "tweego -o bin\\alya.html src --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlueShoelaces/alya-twine"
+    "url": "git+https://github.com/BlueShoelaces/tUnit"
   },
   "author": "jingle",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BlueShoelaces/alya-twine/issues"
+    "url": "https://github.com/BlueShoelaces/tUnit/issues"
   },
-  "homepage": "https://github.com/BlueShoelaces/alya-twine#readme"
+  "homepage": "https://github.com/BlueShoelaces/tUnit#readme"
 }
