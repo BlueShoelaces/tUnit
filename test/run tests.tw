@@ -8,8 +8,6 @@
     <<display _testPassage.title>>
 <</for>>
 
-<<set _outputIndex to 0>>
-
 <</nobr>>
 
 <<for _test range $tests>>
@@ -17,16 +15,14 @@
     <<if $weAreFocusing>>
         <<if _test.testControl == "focus">>
             _test.name
-            <br/><<run _test.run()>>$output[_outputIndex]
-            <<set _outputIndex to (_outputIndex + 1)>>
+            <br/><<run _test.run()>>$tempOutput
         <</if>>
     <<elseif _test.testControl == "skip">>
         _test.name
         <br/>(skipped)
     <<else>>
         _test.name
-        <br/><<run _test.run()>>$output[_outputIndex]
-        <<set _outputIndex to (_outputIndex + 1)>>
+        <br/><<run _test.run()>>$tempOutput
     <</if>>
     <</nobr>>
 

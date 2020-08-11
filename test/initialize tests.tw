@@ -1,7 +1,6 @@
 :: initialize tests
 
 // initialize variables
-<<set $output to []>>
 <<set $tests to []>>
 <<set $weAreFocusing to false>>
 

@@ -4,9 +4,9 @@ Macro.add("assert-equals", {
         var actual = this.args[1];
 
         if (expected === actual) {
-            State.variables.output.push("Passed!");
+            State.variables.tempOutput = "Passed!";
         } else {
-            State.variables.output.push("Failed: expected " + expected + " but was " + actual + ".");
+            State.variables.tempOutput = "Failed: expected " + expected + " but was " + actual + ".";
         }
     }
 });
