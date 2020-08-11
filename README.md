@@ -3,7 +3,7 @@ Automated unit-testing in Twine
 
 ## links & docs
 - [GitHub repo](https://github.com/BlueShoelaces/tUnit)
-- [Trello board](https://trello.com/b/k6P0oCE6/tUnit)
+- [GitHub project board](https://github.com/BlueShoelaces/tUnit/projects/1)
 - [SugarCube documentation](http://www.motoslave.net/sugarcube/2/docs/)
 - [Tweego documentation](https://www.motoslave.net/tweego/docs/)
 - [Twee specification](https://github.com/iftechfoundation/twine-specs/blob/master/twee-3-specification.md)
