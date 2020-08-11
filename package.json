@@ -1,17 +1,16 @@
 {
-  "name": "alya-game",
+  "name": "tUnit",
   "version": "1.0.0",
-  "description": "```\r \"C:\\Program Files\\tweego-2.1.1-windows-x64\\tweego.exe\"\r ```\r Add this to PATH variable to be able to use `tweego` cli.",
-  "main": "bin\\alya.html",
+  "description": "Automated testing for Twine",
+  "main": "test-output\\test.html",
   "scripts": {
-    "test": "tweego -o test-output\\test.html test --watch",
-    "compile": "tweego -o bin\\alya.html src --watch"
+    "test": "tweego -o test-output\\test.html test --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BlueShoelaces/tUnit"
   },
-  "author": "jingle",
+  "author": "Nicole Arruda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BlueShoelaces/tUnit/issues"
