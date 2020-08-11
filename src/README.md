@@ -1,13 +1,21 @@
-# tUnit
-Automated unit-testing in Twine
+# alya
+Simple program to test out tUnit
+## compile and launch
+### Local path to Tweego
+```
+"C:\Program Files\tweego-2.1.1-windows-x64\tweego.exe"
+```
+Add this to PATH variable to be able to use `tweego` cli.
 
-## links & docs
-- [GitHub repo](https://github.com/BlueShoelaces/tUnit)
-- [Trello board](https://trello.com/b/k6P0oCE6/tUnit)
-- [SugarCube documentation](http://www.motoslave.net/sugarcube/2/docs/)
-- [Tweego documentation](https://www.motoslave.net/tweego/docs/)
-- [Twee specification](https://github.com/iftechfoundation/twine-specs/blob/master/twee-3-specification.md)
-- [Extremely helpful Twee/Tweego blog post](https://dev.to/lazerwalker/a-modern-developer-s-workflow-for-twine-4imp)
+### To compile with live updates
+```
+npm run-script compile
+```
+This runs
+```
+tweego -o bin\alya.html src --watch
+```
+which will recursively compile all `*.tw` or `*.twee` files in `src` into a single file in `bin` called `alya.html`. This file can then be opened in the browser or imported into Twine.
 
 ### Switching between plain text and the visual editor
 To view a project in the Twine visual editor, just open Twine and import the compiled `*.html` file.
