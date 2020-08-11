@@ -4,11 +4,11 @@
 <<set $tests to []>>
 <<set $weAreFocusing to false>>
 
-// load classes
-importScripts("classes/test.js")
-
-// load macros
-importScripts("macros/assert-equals.js")
+// load classes and macros
+importScripts(
+	"classes/test.js",
+	"macros/assert-equals.js",
+	"macros/assert-true.js")
 	.then(function () {
 		<<goto "run tests">>
 	})

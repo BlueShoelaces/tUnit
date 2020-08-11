@@ -10,4 +10,12 @@
     <<assert-equals 14 42>>
 <</test>>
 
+<<test "true should be true">>
+    <<assert-true true>>
+<</test>>
+
+<<test "false should be true">>
+    <<assert-true false>>
+<</test>>
+
 <</nobr>>
