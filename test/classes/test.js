@@ -1,6 +1,7 @@
-window.Test = function (name, payload) {
+window.Test = function (name, payload, testControl) {
 	this.name = name;
 	this.payload = payload;
+	this.testControl = testControl;
 };
 
 Test.prototype.run = function () {
@@ -12,14 +13,16 @@ Test.prototype.run = function () {
 Test.prototype.clone = function () {
 	return new Test(
 		this.name,
-		this.payload
+		this.payload,
+		this.testControl
 	);
 };
 
 Test.prototype.toJSON = function () {
 	return JSON.reviveWrapper(String.format(
-		'new Test({0},{1},{2},{3})',
+		'new Test({0},{1},{2})',
 		JSON.stringify(this.name),
-		JSON.stringify(this.payload)
+		JSON.stringify(this.payload),
+		JSON.stringify(this.testControl)
 	));
 };
