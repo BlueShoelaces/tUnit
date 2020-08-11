@@ -6,7 +6,7 @@ Macro.add("assert-equals", {
         if (expected === actual) {
             State.variables.output.push("Passed!");
         } else {
-            State.variables.output.push("Failed :(");
+            State.variables.output.push("Failed: expected " + expected + " but was " + actual + ".");
         }
     }
 });
