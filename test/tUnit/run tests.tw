@@ -3,6 +3,8 @@
 <h1>Test results</h1><<nobr>>
 <i>Running tests...</i>
 
+My add: 3 + 5 = <<my-add 3 5>>
+
 <<set $testPassages to Story.lookup("tags", "test")>>
 <<for _testPassage range $testPassages>>
     <<display _testPassage.title>>

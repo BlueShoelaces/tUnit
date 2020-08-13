@@ -8,7 +8,8 @@
 importScripts(
 	"classes/test.js",
 	"macros/assert-equals.js",
-	"macros/assert-true.js")
+	"macros/assert-true.js",
+	"macros/my-add.js")
 	.then(function () {
 		<<goto "run tests">>
 	})
