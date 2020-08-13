@@ -6,8 +6,6 @@
 
 // load classes and macros
 importScripts(
-	"classes/",
-	"macros/",
 	"../custom-macros-for-sugarcube-2/")
 	.then(function () {
 		<<goto "run tests">>

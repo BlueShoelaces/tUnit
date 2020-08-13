@@ -3,17 +3,12 @@
 <h1>Test results</h1><<nobr>>
 <i>Running tests...</i>
 
-My add: 3 + 5 = <<my-add 3 5>>
-
 <<set $testPassages to Story.lookup("tags", "test")>>
 <<for _testPassage range $testPassages>>
     <<display _testPassage.title>>
 <</for>>
 
-<</nobr>>
-
 <<for _test range $tests>>
-    <<nobr>>
     <<if $weAreFocusing>>
         <<if _test.testControl == "focus">>
             _test.name
@@ -26,6 +21,6 @@ My add: 3 + 5 = <<my-add 3 5>>
         _test.name
         <br/><<run _test.run()>>$tempOutput
     <</if>>
-    <</nobr>>
-
+<br/><br/>
 <</for>>
+<</nobr>>
