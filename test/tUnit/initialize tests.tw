@@ -6,9 +6,9 @@
 
 // load classes and macros
 importScripts(
-	"classes/test.js",
-	"macros/assert-equals.js",
-	"macros/assert-true.js")
+	"classes/",
+	"macros/",
+	"../custom-macros-for-sugarcube-2/")
 	.then(function () {
 		<<goto "run tests">>
 	})

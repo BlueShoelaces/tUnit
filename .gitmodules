@@ -1,0 +1,3 @@
+[submodule "custom-macros-for-sugarcube-2"]
+	path = custom-macros-for-sugarcube-2
+	url = https://github.com/ChapelR/custom-macros-for-sugarcube-2.git
