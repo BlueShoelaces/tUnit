@@ -8,10 +8,7 @@
     <<display _testPassage.title>>
 <</for>>
 
-<</nobr>>
-
 <<for _test range $tests>>
-    <<nobr>>
     <<if $weAreFocusing>>
         <<if _test.testControl == "focus">>
             _test.name
@@ -24,6 +21,6 @@
         _test.name
         <br/><<run _test.run()>>$tempOutput
     <</if>>
-    <</nobr>>
-
+<br/><br/>
 <</for>>
+<</nobr>>

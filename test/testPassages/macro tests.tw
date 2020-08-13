@@ -1,0 +1,10 @@
+:: macro tests [test]
+
+<<test "3 + 5 should equal 8">>
+    <<set _actual to "<<my-add 3 5>>">>
+    <<assert-equals 8 _actual>>
+<</test>>
+
+<<test "1 + 2 should equal 12">>
+    <<assert-equals 12 "<<my-add 1 2>>">>
+<</test>>
